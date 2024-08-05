@@ -29,7 +29,7 @@ export class Tab2Page {
   name: string = ''
   quantity: number | null = null
   price: number | null = null
-  imgUrl = ''
+  imgUrl: string | undefined = undefined
 
   constructor() { }
   onClick() {
@@ -43,6 +43,9 @@ export class Tab2Page {
       quality: 100
     });
     console.log(capturedPhoto.webPath)
+    if (capturedPhoto) {
+      this.imgUrl = capturedPhoto.webPath
+    }
   }
 
 }

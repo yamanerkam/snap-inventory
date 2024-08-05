@@ -30,6 +30,8 @@
 
 
     <ion-button (click)="onClick()">Send</ion-button>
-
+    <div *ngIf="imgUrl">
+      <ion-img [src]="imgUrl"></ion-img>
+    </div>
   </ion-list>
 </ion-content>
