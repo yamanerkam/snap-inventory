@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonLabel, IonButton, IonItem, IonList, IonInput, IonFabButton, IonIcon, IonFab, IonImg } from '@ionic/angular/standalone';
+import { IonHeader, IonThumbnail, IonToolbar, IonTitle, IonContent, IonLabel, IonButton, IonItem, IonList, IonInput, IonFabButton, IonIcon, IonFab, IonImg } from '@ionic/angular/standalone';
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -23,7 +23,7 @@ type InventoryObject = {
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss'],
   standalone: true,
-  imports: [IonImg, IonFab, IonIcon, IonFabButton, IonInput, IonList, CommonModule, FormsModule, IonItem, IonButton, IonLabel, IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent]
+  imports: [IonImg, IonFab, IonThumbnail, IonIcon, IonFabButton, IonInput, IonList, CommonModule, FormsModule, IonItem, IonButton, IonLabel, IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent]
 })
 export class Tab2Page {
   name: string = ''

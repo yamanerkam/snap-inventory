@@ -24,14 +24,15 @@
     <ion-button (click)="photo()">
       Photo
     </ion-button>
-    <ion-img></ion-img>
 
 
 
 
     <ion-button (click)="onClick()">Send</ion-button>
     <div *ngIf="imgUrl">
-      <ion-img [src]="imgUrl"></ion-img>
+      <ion-thumbnail>
+        <img src="{{imgUrl}}" alt="">
+      </ion-thumbnail>
     </div>
   </ion-list>
 </ion-content>
