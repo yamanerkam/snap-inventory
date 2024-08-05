@@ -1,0 +1,7 @@
+{
+  "name": "snap-inventory",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
